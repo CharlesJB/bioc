@@ -1,0 +1,38 @@
+---
+title: "bioc: biocLite wrapper, for the lazy"
+output:
+    BiocStyle::html_document:
+author:
+    Charles Joly Beauparlant
+vignette: >
+    %\VignetteIndexEntry{bioc package}
+    %\VignetteEngine{knitr::rmarkdown}
+    \usepackage[utf8]{inputenc}
+---
+
+```{r style, echo = FALSE, results = 'asis', message = FALSE}
+BiocStyle::markdown()
+library(knitr)
+```
+
+**Modified**: 27 september, 2015<br />
+**Compiled**: `r date()`<br />
+
+The goal of this package is to avoid having to source the bioLite script from
+Bioconductor's web site every time I want to install a Bioconductor package or
+when I want to update all my packages.
+
+## Installation
+
+```r
+require(devtools)
+devtools::install_github("CharlesJB/bioc")
+```
+
+## Usage
+
+```r
+library(bioc)
+bioc() # To update all packages
+bioc("metagene") # To install a Bioconductor package
+```
