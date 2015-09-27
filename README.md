@@ -6,14 +6,14 @@ when I want to update all my packages.
 
 ## Installation
 
-```
+```r
 require(devtools)
 devtools::install_github("CharlesJB/bioc")
 ```
 
 ## Usage
 
-```
+```r
 library(bioc)
 bioc() # To update all packages
 bioc("metagene") # To install a Bioconductor package
