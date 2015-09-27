@@ -16,7 +16,6 @@
 #' @export
 bioc <- function(force_source = FALSE, ...) {
     if (force_source == TRUE | ! exists("biocLite")) {
-        message("asdf")
         source("http://www.bioconductor.org/biocLite.R")
     }
     biocLite(...)
