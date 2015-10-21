@@ -4,13 +4,14 @@
 \alias{bioc}
 \title{A wrapper around the biocLite function, for the lazy}
 \usage{
-bioc(force_source = FALSE, ...)
+bioc(pkg = NULL, force_source = FALSE)
 }
 \arguments{
-\item{force_source}{\code{source} the biocLite.R script even if a biocLite
-function is already available. Default: \code{FALSE}.}
+\item{pkg}{The name of the package to install. If \code{NULL}, the function
+will run \code{biocLite()} which will update all packages.}
 
-\item{...}{Argument to pass to the biocLite function.}
+\item{force_source}{\code{source} the biocLite.R script even if a biocLite
+                    function is already available. Default: \code{FALSE}.}
 }
 \description{
 This function will source the biocLite function from bioconductor website if
