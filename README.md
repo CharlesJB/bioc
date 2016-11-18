@@ -16,5 +16,5 @@ devtools::install_github("CharlesJB/bioc")
 ```r
 library(bioc)
 bioc() # To update all packages
-bioc("metagene") # To install a Bioconductor package
+bioc("metagene") # To install a Bioconductor or CRAN package
 ```
