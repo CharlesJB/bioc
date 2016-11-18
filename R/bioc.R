@@ -9,15 +9,16 @@
 #'            will run \code{biocLite()} which will update all packages.
 #' @param force_source \code{source} the biocLite.R script even if a biocLite
 #'                     function is already available. Default: \code{FALSE}.
+#' @param ask Ask before updating a package. Default. \code{FALSE}
 #'
 #' @examples
 #' bioc() # To update all packages
 #' bioc("metagene") # To install a Bioconductor's package
 #'
 #' @export
-bioc <- function(pkg = NULL, force_source = FALSE) {
+bioc <- function(pkg = NULL, force_source = FALSE, ask = FALSE) {
     if (force_source == TRUE | ! exists("biocLite")) {
         source("http://www.bioconductor.org/biocLite.R")
     }
-    biocLite(pkg)
+    biocLite(pkg, ask = ask)
 }
