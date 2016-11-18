@@ -1,6 +1,6 @@
 Package: bioc
 Title: BiocLite wrapper, for the lazy.
-Version: 0.0.6
+Version: 0.0.7
 Date: 2015-09-27
 Authors@R: person("Charles", "Joly Beauparlant",
     email = "Charles.Joly-Beauparlant@crchul.ulaval.ca", role = c("aut", "cre"))
