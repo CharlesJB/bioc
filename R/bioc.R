@@ -18,7 +18,7 @@
 #' @export
 bioc <- function(pkg = NULL, force_source = FALSE, ask = FALSE) {
     if (force_source == TRUE | ! exists("biocLite")) {
-        source("http://www.bioconductor.org/biocLite.R")
+        source("https://www.bioconductor.org/biocLite.R")
     }
     biocLite(pkg, ask = ask)
 }
