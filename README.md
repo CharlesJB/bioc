@@ -18,3 +18,9 @@ library(bioc)
 bioc() # To update all packages
 bioc("metagene") # To install a Bioconductor or CRAN package
 ```
+
+The `bioc` package also works with CRAN:
+
+```r
+bioc("tidyverse")
+```

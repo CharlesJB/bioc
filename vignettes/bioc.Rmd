@@ -15,7 +15,7 @@ BiocStyle::markdown()
 library(knitr)
 ```
 
-**Modified**: 27 september, 2015<br />
+**Modified**: 03 march, 2017<br />
 **Compiled**: `r date()`<br />
 
 The goal of this package is to avoid having to source the bioLite script from
@@ -35,4 +35,10 @@ devtools::install_github("CharlesJB/bioc")
 library(bioc)
 bioc() # To update all packages
 bioc("metagene") # To install a Bioconductor or CRAN package
+```
+
+The `bioc` package also works with CRAN:
+
+```r
+bioc("tidyverse")
 ```
